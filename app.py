@@ -41,9 +41,9 @@ def main():
 
             # Display the result
             if prediction[0][0] > 0.5:
-                st.error("Prediction: Normal")
+                st.success("Prediction: Normal")
             else:
-                st.success("Prediction: Pneumonia")
+                st.error("Prediction: Pneumonia")
 
 if __name__ == '__main__':
     main()
